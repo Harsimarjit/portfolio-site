@@ -8,34 +8,8 @@ function App() {
 
   return (
     <>
-    <div className='bg-gray-100 h-screen'> 
-    <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-  <div className="flex items-center flex-shrink-0 text-white mr-6">
-    <svg className="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
-    <span className="font-semibold text-xl tracking-tight">Tailwind CSS</span>
-  </div>
-  <div class="block lg:hidden">
-    <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-      <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-    </button>
-  </div>
-  <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-    <div className="text-sm lg:flex-grow">
-      <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-        Docs
-      </a>
-      <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-        Examples
-      </a>
-      <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
-        Blog
-      </a>
-    </div>
-    <div>
-      <a href="#" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
-    </div>
-  </div>
-</nav>
+    <div className='bg-gray-300'> 
+    
       <div className='flex flex justify-around p-20'>
         <img className='size-96 rounded-3xl' src={img2} alt="Simar's image"/>
         <div className='bg-gray-200 py-10 px-5 rounded-lg'>
@@ -43,6 +17,55 @@ function App() {
           <p>I am a Software Enginner with passion for poblem solving with web development.</p>
         </div>
       </div>
+
+      <div className='bg-blue-100 py-8 px-4'>
+        <div className='text-3xl m-4'>About</div>
+        <div className='p-4 flex flex-col space-y-4'>
+          <div >
+            I am a passionate Software Engineer. I love to solve problems using web development technologies. 
+            I want to build professional websites that have great UI/UX.
+          </div>
+
+          <div>
+            <p className='font-semibold'>LinkedIn:</p> https://www.linkedin.com/in/harsimarjit-singh-676b37202/</div>
+          <div>
+            <p className='font-semibold'>Email:</p> simarbadding@gmail.com </div>
+          <div>
+            <p className='font-semibold'>City:</p> Toronto, ON </div>
+          
+          <div>
+            I want to make features that solve everyday problems at scale. I feel I have the capability to breakdown a huge problem statement into small chunks, thereby enabling mme to analyse and implement solutions easily.
+            
+          </div>
+        </div>
+      </div>
+
+      <div className='bg-rose-100 py-8 px-4'>
+        <div className='text-3xl m-4'>Projects</div>
+        <div className='p-4 flex flex-col space-y-4'>
+          <div className='font-semibold text-lg'>Food Ordering Website</div>
+          <ul>
+            <li>Created a single page dynamic food ordering website, using which users can order their favorite dishes</li>
+            <li>Search, filter using tags and many such user-friendly features have been added</li>
+            <li>Used MEAN stack - MongoDB, Express, Angular, Node to implement both fronted and back-end API layer to perform CRUD - Create, Read, Update and Delete operations</li>
+            <li>Implemented authentication and authorization using passport JWT tokens</li>
+          </ul>
+          <div className='font-semibold text-lg'>Unity3D Games</div>
+          <ul>
+            <li>Made multiple mobile games using Unity3D and uploaded 2 of them to Google Play Store</li>
+            <li>Used Google Admob API to implement advertisement in one of the games</li>
+            <li>Implemented shooting and platforming games targeted for PC both in 2D and 3D</li>
+            <li>Accessible on Android Play Store: Cube Attack and .TicTacToe3D</li>
+          </ul>
+          <div  className='font-semibold text-lg'>JavaFX Application</div>
+          <ul>
+            <li>Used JavaFX linked to Oracle database to create a GUI for a grocery shop application</li>
+            <li>Performed CRUD operations in this application</li>
+          </ul>
+        </div>
+
+      </div>
+
     </div>
     </>
   )
