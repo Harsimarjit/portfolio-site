@@ -1,4 +1,4 @@
-import img2 from "./assets/my-image3.jpg";
+import img2 from "./assets/my-image3.png";
 import { useEffect,useState } from "react";
 import resumePdf from './resume.pdf';
 
@@ -13,7 +13,7 @@ function App() {
 
   const [typedText, setTypedText] = useState('');
   const [charIndex, setCharIndex] = useState(0);
-  const textToType = "I am proficient in: \nReactJS - Javascript Framework\nMongoDb - Database\nNode Environment\nI make website using this stack called MERN Stack.";
+  const textToType = "I am proficient in: \nReactJS\nMongoDb - Database\nNode Environment\nJavascript";
   const typingSpeed = 50; // Milliseconds per character
 
   useEffect(() => {
@@ -34,7 +34,7 @@ function App() {
   return (
     <>
     <div className='bg-gradient-to-r from-cyan-400 to-blue-400'> 
-      <nav className="fixed top-0 left-0 right-0 z-10 flex justify-around p-4 bg-gray-800 text-white">
+      <nav className="fixed grid grid-cols-3 lg:grid-cols-6 gap-6 p-4 bg-gray-800 text-white w-full">
         <button onClick={() => scrollToSection("home")} className="hover:text-gray-300 focus:outline-none">Home</button>
         <button onClick={() => scrollToSection("about")} className="hover:text-gray-300 focus:outline-none">About Me</button>
         <button onClick={() => scrollToSection("projects")} className="hover:text-gray-300 focus:outline-none">Projects</button>
@@ -44,10 +44,12 @@ function App() {
 
       </nav>
 
-      <div id='home' className='pt-20'>
-        <div className='flex justify-around p-20'>
-          <img className='size-96 rounded-3xl' src={img2} alt="Simar's image"/>
-          <div className='bg-gray-200 py-10 px-5 rounded-lg'>
+      <div id='home' className='pt-40 lg:pt-20'>
+        <div className='flex justify-around p-10 space-x-4 flex-col md:flex-row'>
+          <img className='size-96 rounded-3xl 
+          bg-gradient-to-r from-blue-400 to-cyan-400
+           border-2 border-gray-900 shadow-lg' src={img2} alt="Simar's image"/>
+          <div className='bg-gray-200 py-10 px-5 rounded-lg shadow-lg my-10'>
             <h3 className='text-3xl my-5 text-blue-900'>Harsimarjit Singh</h3>
             <p>I am a Software Engineer with passion for problem solving with web development.</p>
             <pre className="text-md">{typedText}</pre>
